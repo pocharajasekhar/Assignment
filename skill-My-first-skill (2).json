@@ -1,0 +1,858 @@
+{
+  "intents": [
+    {
+      "intent": "enquiry",
+      "examples": [
+        {
+          "text": "what is the cost of AI Seat"
+        },
+        {
+          "text": "what is the cost of CSE Seat"
+        },
+        {
+          "text": "What is the cost of ECE Seat"
+        },
+        {
+          "text": "What is the duration"
+        },
+        {
+          "text": "which Programmes are offered"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "fees",
+      "examples": [
+        {
+          "text": "college fees"
+        },
+        {
+          "text": "hostel fees"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Hostel",
+      "examples": [
+        {
+          "text": "Boys hostel"
+        },
+        {
+          "text": "Fees"
+        },
+        {
+          "text": "Girls Hostel"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "collegefees",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "AI",
+          "synonyms": [
+            "AI"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "CSE Seat",
+          "synonyms": [
+            "CSE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ECE Seat",
+          "synonyms": [
+            "ECE"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "AI",
+          "synonyms": [
+            "AI",
+            "AIML",
+            "Artificial Intelligence"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "branch",
+          "synonyms": [
+            "AI branch",
+            "cse branch",
+            "ece branch"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "brochure",
+          "synonyms": [
+            "booklet",
+            "menu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cost",
+          "synonyms": [
+            "payment",
+            "price",
+            "rate"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "CSE",
+          "synonyms": [
+            "Computer Science & Engineering",
+            "CSE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Donation",
+          "synonyms": [
+            "disbursement",
+            "grant",
+            "payment"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "duration",
+          "synonyms": [
+            "How Many Years",
+            "no of yers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ECE",
+          "synonyms": [
+            "ECE",
+            "Electrical & Electronics Engineering"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "how much amount to pay in advance",
+          "synonyms": [
+            "advance amount",
+            "installment amount"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "How much to pay initially",
+          "synonyms": [
+            "installements",
+            "pay in advance"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "How to pay money in installment",
+          "synonyms": [
+            "money in installment"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Name of the Aspirant",
+          "synonyms": [
+            "Name of the Candidate",
+            "Name of the Student"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "good afternoon",
+          "synonyms": [
+            "ga",
+            "gud afternoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good evening",
+          "synonyms": [
+            "ge",
+            "gud evening"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good morning",
+          "synonyms": [
+            "gm",
+            "gurmorning"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": [
+            "Hello"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": [
+            "Hi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Information about the college",
+          "synonyms": [
+            "about college",
+            "about university",
+            "data about college"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "hostel",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Boys Hostel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Girls Hostel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hostel Fee",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Paymen",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Net banking",
+          "synonyms": [
+            "Bank Transfer",
+            "NEFT",
+            "RTGS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": [
+            "Amazon Pay",
+            "Google pay",
+            "Gpay",
+            "Phonepe"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome to Anurag University"
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1601650271168",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1601658203893"
+    },
+    {
+      "type": "frame",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@greetings",
+      "dialog_node": "node_2_1601648672167",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@enquiry",
+      "dialog_node": "node_2_1601650271168",
+      "previous_sibling": "node_2_1601648672167",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601648672167",
+      "conditions": "@greetings:(good morning)",
+      "dialog_node": "response_10_1601649069559"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "8 lacs"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:ECE",
+      "dialog_node": "response_10_1601650794232",
+      "previous_sibling": "response_4_1601650771000"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "contact 8181818181"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:(how much amount to pay in advance)",
+      "dialog_node": "response_10_1601654385838",
+      "previous_sibling": "response_3_1601653742632"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "contact8181818181"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:Donation",
+      "dialog_node": "response_10_1601656717160",
+      "previous_sibling": "response_1_1601654524538"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "CSE,ECE,AI"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:branch",
+      "dialog_node": "response_1_1601650727993",
+      "previous_sibling": "handler_1_1601658203893"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "contact 8181818181"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:(How to pay money in installment)",
+      "dialog_node": "response_1_1601654524538",
+      "previous_sibling": "response_10_1601654385838"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "11 Lacs"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:AI",
+      "dialog_node": "response_2_1601650820681",
+      "previous_sibling": "response_10_1601650794232"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Borchure ",
+            "source": "https://anurag.edu.in/wp-content/themes/Avada-Child-Theme/images/AU-PROSPECTUS-2020_Booklet-web.pdf",
+            "description": "Brochure",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:brochure",
+      "dialog_node": "response_2_1601652933313",
+      "previous_sibling": "response_7_1601651545343"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Call : 8181818181"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:(How much to pay initially)",
+      "dialog_node": "response_3_1601653742632",
+      "previous_sibling": "response_2_1601652933313"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "UPI ,Netbanking, Card"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@Payment",
+      "dialog_node": "response_3_1601747326886",
+      "previous_sibling": "response_7_1601747303167"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601648672167",
+      "conditions": "@greetings:(good afternoon)",
+      "dialog_node": "response_4_1601649195212",
+      "previous_sibling": "response_10_1601649069559"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "12 Lacs"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:CSE",
+      "dialog_node": "response_4_1601650771000",
+      "previous_sibling": "response_1_1601650727993"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601648672167",
+      "conditions": "@greetings:(good evening)",
+      "dialog_node": "response_5_1601649214401",
+      "previous_sibling": "response_4_1601649195212"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601648672167",
+      "conditions": "@greetings:Hello",
+      "dialog_node": "response_6_1601653588599",
+      "previous_sibling": "response_7_1601653442296"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "4 Years"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@enquiry:duration",
+      "dialog_node": "response_7_1601651545343",
+      "previous_sibling": "response_2_1601650820681"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601648672167",
+      "conditions": "@greetings:Hi",
+      "dialog_node": "response_7_1601653442296",
+      "previous_sibling": "response_9_1601649294227"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Information",
+            "options": [
+              {
+                "label": "About Anurag University",
+                "value": {
+                  "input": {
+                    "text": "Anurag University is a private university located in Hyderabad, Telangana. Our primary focus is to provide a high-quality graduate, postgraduate and doctoral education in engineering, pharmacy and management fields.  Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs.  Anurag University is established through Ordinance No: 1/2020, dated: 20.05.2020 as per the Telangana State Private Universities Act No: 11 of 2018. Subsequently the Ordinance No: 1/2020 has come to an Act No: 13 of 2020 on 19.09.2020."
+                  }
+                }
+              },
+              {
+                "label": "About Dept. of CSE",
+                "value": {
+                  "input": {
+                    "text": "Computer Science & Engineering (CSE) is transforming everything around us. It is an exciting, fast-moving and creative field. It is the application of engineering to analyze, design and built software solutions to solve the societal problems. It offers lucrative career and an opportunity to build a better world."
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1601648672167",
+      "conditions": "@greetings:(Information about the college)",
+      "dialog_node": "response_7_1601704044189",
+      "previous_sibling": "response_6_1601653588599"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available with 80000 fee per year"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@hostel:(Girls Hostel)",
+      "dialog_node": "response_7_1601747303167",
+      "previous_sibling": "response_8_1601747254902"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available with 75000 fee per year"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601650271168",
+      "conditions": "@hostel",
+      "dialog_node": "response_8_1601747254902",
+      "previous_sibling": "response_10_1601656717160"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1601648672167",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1601649294227",
+      "previous_sibling": "response_5_1601649214401"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am Anurag University Bot , How May i help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Information",
+            "options": [
+              {
+                "label": "About Anurag university",
+                "value": {
+                  "input": {
+                    "text": "Anurag University is a private university located in Hyderabad, Telangana. Our primary focus is to provide a high-quality graduate, postgraduate and doctoral education in engineering, pharmacy and management fields.  Anurag offers 13 Undergraduate, 13 Graduate and 9 Doctoral programs.  Anurag University is established through Ordinance No: 1/2020, dated: 20.05.2020 as per the Telangana State Private Universities Act No: 11 of 2018. Subsequently the Ordinance No: 1/2020 has come to an Act No: 13 of 2020 on 19.09.2020."
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#Greetings",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
